@@ -1,7 +1,7 @@
 
 # Registro y configuración base en MongoDB Atlas
 
-Este servicio permitirá alojar la base de datos en remoto, pudiendo conectarte a ella a través de un string de conexión que sustituirá a tu actual `mongodb://localhost/db_local`
+MongoDB Atlas ofrece un servicio gratuito para alojar bases de datos en remoto, pudiendo accederlas a través de un string de conexión que sustituirá a tu actual `mongodb://localhost/db_local`
 
 ## Registro y configuración de Cluster
 
