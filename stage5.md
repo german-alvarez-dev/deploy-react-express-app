@@ -20,7 +20,7 @@ Debido a que las peticiones que se realizan desde tus servicios deben ir dirigid
 
 ## Variable de entorno local
 
-¿Tu aplicación local ha dejado de funcionar, si? El paquete create-react-app no dispone de una dependencia como `dotenv` que propague las variables de entorno local, pero manipulando el script de inicio de su `package.json`podemos alcanzar el mismo objetivo:
+Tu aplicación local ha dejado de funcionar. El paquete create-react-app no dispone de una dependencia como `dotenv` que propague las variables de entorno local, pero manipulando el script de inicio de su `package.json`podemos alcanzar el mismo objetivo:
 
     "start": "REACT_APP_API_URL=http://localhost:5000/api react-scripts start",  
 
