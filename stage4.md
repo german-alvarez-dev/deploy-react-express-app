@@ -8,11 +8,7 @@ Transferir tu API local a producción supone desplegar los archivos que la compo
 
 Debido a que el archivo `.env` no será desplegado, es necesario habilitar las variables de entorno en tu aplicación de Heroku.
  
-1. Accede mediante la terminal a la aplicación de Heroku previamente creada para el servidor mediante el comando 
-
-       heroku git:remote --app myserver
-
-   Si quieres comprobar a cuál de tus aplicaciones estás conectado, usa el comando 
+1. Accede mediante la terminal al directorio raíz de tu servidor, donde se encuentra el `package.json`. Puedes comprobar en cualquier momento la aplicación de Heroku asociada a un Git mediante el comando
 
        git apps:info
 
@@ -22,16 +18,16 @@ Debido a que el archivo `.env` no será desplegado, es necesario habilitar las v
   
    Puedes consultar el valor de cualquier variable de entorno con el comando `heroku config:get NOMBREVARIABLE` 
 
-3. Una vez has realizado el proceso para cada una, incluye dos variables adicionales en vistas a garantizar frente a CORS el acceso de tu cliente a la API, tanto si se realiza desde el entorno local como desde el remoto:
+3. Una vez has realizado este proceso para cada una, incluye dos variables adicionales en vistas a garantizar frente a CORS el acceso de tu cliente a la API, tanto si se realiza desde el entorno local como desde el remoto:
 
        DOMAIN_REMOTE="https://myclient.herokuapp.com"   
        DOMAIN_LOCAL="http://localhost:3000"
 
-4. No olvides incluir estas dos igualmente en el archivo `.env` de tu entorno local.
+4. No olvides incluir igualmente estas dos variables en el archivo `.env` de tu entorno local.
 
 ## Configuración multi dominio en CORS
 
-En este punto tu servidor acepta peticiones desde `http://localhost:3000` gracias a la configuración de CORS. En adelante, tu servidor debe también aceptarlas desde `https://myclient.herokuapp.com` ya que podrás necesitar emitir peticiones a la API desde el entorno cliente como producción.
+En este punto tu API acepta peticiones desde `http://localhost:3000` gracias a la configuración de CORS. En adelante debe también aceptarlas desde `https://myclient.herokuapp.com` ya que tu cliente necesitará comunicarse con la API tanto desde el entorno de desarrollo como de producción.
 
 Para ello, incluye la nueva variable de entorno `DOMAIN_REMOTE` a la *whitelist*, que contiene los dominios aceptados por CORS:
 
@@ -41,7 +37,7 @@ Comprueba cómo tu servidor sigue funcionando en local con normalidad.
 
 ## Paso a producción
 
-Transferir los archivos a la aplicación de Heroku permitirá acceder tu API en la red desde los dominios aceptados por CORS, a la vez que mantendrá todas sus funcionalidades en el entorno local, donde puedes seguir desarrollando.
+Transferir los archivos a la aplicación de Heroku hará accesible tu API desde los dominios aceptados por CORS, a la vez que mantendrá todas sus funcionalidades en el entorno local, donde puedes seguir desarrollando.
 
 1. Accede mediante la terminal a la raíz de tu servidor, donde se encuentra el archivo `package.json`
 2. Agrega los cambios y realiza un primer commit:
