@@ -4,7 +4,7 @@
 
 Transferir tu API local a producción supone desplegar los archivos que la componen a un servidor externo, permitiendo así que las respuestas que ahora se emiten desde `http://localhost:6000/api` pasen a realizarse desde `https://myserver.herokuapp.com/api`.
 
-## Variables de entorno
+## Variables de entorno remoto
 
 Debido a que el archivo `.env` no será desplegado, es necesario habilitar las variables de entorno en tu aplicación de Heroku.
  
@@ -22,12 +22,12 @@ Debido a que el archivo `.env` no será desplegado, es necesario habilitar las v
   
    Puedes consultar el valor de cualquier variable de entorno con el comando `heroku config:get NOMBREVARIABLE` 
 
-3. Una vez has realizado el proceso para cada una, incluye dos variables adicionales en vistas a garantizar frente a CORS el acceso de tu cliente al servidor, tanto si se realiza desde el entorno local como desde el remoto:
+3. Una vez has realizado el proceso para cada una, incluye dos variables adicionales en vistas a garantizar frente a CORS el acceso de tu cliente a la API, tanto si se realiza desde el entorno local como desde el remoto:
 
        DOMAIN_REMOTE="https://myclient.herokuapp.com"   
        DOMAIN_LOCAL="http://localhost:3000"
 
-4. No olvides incluir estas dos igualmente en tu archivo `.env`
+4. No olvides incluir estas dos igualmente en el archivo `.env` de tu entorno local.
 
 ## Configuración multi dominio en CORS
 
