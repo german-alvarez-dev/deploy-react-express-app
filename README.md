@@ -1,8 +1,8 @@
 # Deploy a Heroku
 
-## Objeto de la documentación
+## Objeto del documento
 
-Esta documentación tiene como objeto describir el proceso de paso a producción en [Heroku](https://www.heroku.com/) + [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) para una SPA con cliente [`create-react-app`](https://create-react-app.dev/docs/getting-started/) y servidor [ExpressJS](https://expressjs.com/).
+Describir el proceso de paso a producción en [Heroku](https://www.heroku.com/) + [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) para una SPA con cliente [`create-react-app`](https://create-react-app.dev/docs/getting-started/) y servidor [ExpressJS](https://expressjs.com/).
 
 ## Especificaciones
 
