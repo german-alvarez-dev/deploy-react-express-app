@@ -17,6 +17,6 @@ El deploy se realizará en base a los siguientes objetivos:
 
 1. [Registro y configuración base en MongoDB Atlas](https://github.com/german-alvarez-dev/deploy-react-express-app/blob/main/stage1.md)
 2. [Registro y creación de aplicaciones para cliente y servidor en Heroku](https://github.com/german-alvarez-dev/deploy-react-express-app/blob/main/stage2.md)
-3. Paso a producción: base de datos
+3. [Paso a producción: base de datos](https://github.com/german-alvarez-dev/deploy-react-express-app/blob/main/stage3.md)
 4. Paso a producción: servidor
 5. Paso a producción: cliente
