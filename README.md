@@ -19,4 +19,5 @@ El deploy se realizará en base a los siguientes objetivos:
 2. [Registro y creación de aplicaciones para cliente y servidor en Heroku](https://github.com/german-alvarez-dev/deploy-react-express-app/blob/main/stage2.md)
 3. [Paso a producción: base de datos](https://github.com/german-alvarez-dev/deploy-react-express-app/blob/main/stage3.md)
 4. [Paso a producción: servidor](https://github.com/german-alvarez-dev/deploy-react-express-app/blob/main/stage4.md)
-5. Paso a producción: cliente
+5. [Paso a producción: cliente](https://github.com/german-alvarez-dev/deploy-react-express-app/blob/main/stage5.md)
+
