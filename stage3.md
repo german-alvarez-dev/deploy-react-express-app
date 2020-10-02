@@ -56,11 +56,11 @@ MongoDB Atlas permite alojar y gestionar bases de datos en sus servidores a trav
 
 Despídete de tu base de datos local porque en adelante trabajarás contra la base de datos remota, tal y como hacías con la base de datos local. Todas las operaciones pueden realizarse de igual manera en una y otra, así como ambas pueden ser gestionadas a través de Mongo Compass como ya has visto.
 
-1. Accede al archivo .env de tu aplicación de Express, y crea la variable de entorno `DB_REMOTE`con el string de conexión de MongoDB atlas como valor. 
+1. Accede al archivo `.env` de tu aplicación de Express, y crea la variable de entorno `DB_REMOTE` con el string de conexión de MongoDB Atlas como valor. 
 
     `DB_REMOTE=mongodb+srv://your_user:your_pwd.ooyyy.mongodb.net/school`
 
-2. Modifica el método `connect()`de tu aplicación, tomando como valor de conexión esta variable de entorno:
+2. Modifica el método `connect()` de tu aplicación, tomando como valor de conexión esta variable de entorno:
 
     ````javascript
     mongoose
