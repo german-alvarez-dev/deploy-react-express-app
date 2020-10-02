@@ -49,7 +49,7 @@ MongoDB Atlas permite alojar y gestionar bases de datos en sus servidores a trav
      Si ya habías importado antes esta colección, incluye el flag `--drop` para vaciarla previo a re-importarla y evitar que se acumulen los registros.
 
 5. En Mongo Compass, actualiza la vista y comprueba que se ha creado tanto tu colección como los documentos que la conforman.
-6. Repite el proceso para cada colección, cambiando el nombre de la colección y el nombre del archivo en cada una.
+6. Repite el proceso para cada colección, cambiando el nombre de la colección y el nombre del archivo en cada comando.
 
 
 ## Conexión de la API local con la base de datos remota
