@@ -16,7 +16,7 @@ Accede a [Heroku](https://www.heroku.com/) y realiza el proceso de registro con 
 Todos los demás pasos los realizaremos desde la terminal, por lo que no es necesario continuar ningún proceso en la página web.
 
 ## Instalación de Heroku CLI
-Para hacer uso de los comandos de Heroku en un dispositivo, es necesario realizar la instalación de la Interfaz de Línea de Comandos (CLI) de Heroku, accediendo a [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) y siguiendo las instrucciones de instalación. 
+Para hacer uso de los comandos de Heroku en tu terminal, es necesario realizar la instalación de la Interfaz de Línea de Comandos (CLI) de Heroku, accediendo a [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) y siguiendo las instrucciones de instalación. 
 Esto habilitará el uso de [todos los comandos de Heroku](https://devcenter.heroku.com/articles/heroku-cli-commands) en nuestra terminal.
 
 ## Inicio de sesión Heroku CLI
