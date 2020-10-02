@@ -26,7 +26,7 @@ Podremos cerrar la sesión cuando necesitemos mediante el comando `heroku logout
 
 ## Creación de aplicación cliente en Heroku
 
-Alojaremos nuestro cliente de React en una aplicación de Heroku. Para ello debemos crearla mediante el comando `heroku create <appname>`. Ejemplo:
+Alojaremos nuestro cliente de React en una aplicación de Heroku. Para ello, accede mediante la terminal a la raíz de tu aplicación cliente e introduce el comando `heroku create <appname>`. Ejemplo:
 
     heroku create myclient
 
@@ -38,6 +38,6 @@ Una vez que hayas procedido, podrás acceder a esa URL. Recuerda que el número 
 
 ## Creación de aplicación servidor en Heroku
 
-Usaremos de nuevo el comando `create` para crear nuestra aplicación donde alojaremos tu API de Express: 
+Usaremos de nuevo el comando `create` para crear nuestra aplicación donde alojaremos tu API de Express, pero esta vez lo haremos accediendo mediante la terminal al directorio raíz de la aplicación de servidor: 
 
     heroku create myserver
