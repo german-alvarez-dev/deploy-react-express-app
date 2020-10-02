@@ -1,7 +1,7 @@
 
 # Registro y creación de aplicaciones para cliente y servidor en Heroku
 
-El objetivo final que perseguimos con el proceso de despliegue es disponer de dos aplicaciones independientes para el cliente y el servidor que conectaremos de la siguiente forma:
+El objetivo final que perseguimos con el proceso de pasar a producción (despliegue, _deploy_, etc) es disponer de dos aplicaciones independientes para el cliente y el servidor que conectaremos de la siguiente forma:
 
 - Tu cliente de React se alojará en `https://myclient.herokuapp.com/` emitiendo las peticiones que procedan para consumir tu API.
 - Tu API de Express responderá desde `https://myserver.herokuapp.com/`a cada petición con el JSON que proceda.
