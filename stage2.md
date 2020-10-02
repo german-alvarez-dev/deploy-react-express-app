@@ -6,9 +6,9 @@ El objetivo del deploy es disponer de dos aplicaciones independientes para el cl
 - Tu cliente de React se alojará en `https://myclient.herokuapp.com/` emitiendo las peticiones que procedan para consumir tu API.
 - Tu API de Express responderá desde `https://myserver.herokuapp.com/`a cada petición con el JSON que proceda.
 
-Heroku ofrece un servicio gratuito de alojamiento para aplicaciones basadas en NodeJS, pudiendo desplegar a sus servidores los archivos tanto de tu cliente como de tu servidor, obteniendo así una URL para cada uno que permitirá accederlos.
+Heroku ofrece un servicio gratuito de alojamiento para aplicaciones basadas en NodeJS, pudiendo desplegar a sus servidores los archivos tanto de tu cliente como de tu servidor y obteniendo así una URL para cada uno que permitirá accederlos.
 
-Tú elegirás qué nombre deseas para tus aplicaciones, pero en adelante usaremos para esta documentación las URLs `https://myclient.herokuapp.com/`y `https://myserver.herokuapp.com/` como ejemplo de cliente y  servidor, respectivamente. 
+Tú elegirás qué nombre deseas para tus aplicaciones, pero en adelante usaremos para esta documentación las URLs `https://myclient.herokuapp.com/`y `https://myserver.herokuapp.com/` como ejemplo de cliente y servidor, respectivamente. 
 
 ## Registro 
 Accede a [Heroku](https://www.heroku.com/) y realiza el proceso de registro con los datos personales.
