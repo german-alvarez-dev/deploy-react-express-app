@@ -20,7 +20,7 @@ Para hacer uso de los comandos de Heroku en tu terminal, es necesario realizar l
 Esto habilitará el uso de [todos los comandos de Heroku](https://devcenter.heroku.com/articles/heroku-cli-commands) en nuestra terminal.
 
 ## Inicio de sesión Heroku CLI
-Para identificarnos en Heroku CLI acceder a nuestra cuenta desde la terminal, usaremos el comando `heroku login` y siguiendo los pasos. 
+Para identificarnos en Heroku CLI y acceder a nuestra cuenta de Heroku desde la terminal, usaremos el comando `heroku login` siguiendo los pasos. 
 
 Podremos cerrar la sesión cuando necesitemos mediante el comando `heroku logout`.
 
