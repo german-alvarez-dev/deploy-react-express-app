@@ -54,7 +54,7 @@ MongoDB Atlas permite alojar y gestionar bases de datos en sus servidores a trav
 
 ## Conexión de la API local con la base de datos remota
 
-Ve despidiéndote de tu base de datos local porque en adelante trabajarás contra la base de datos remota, tal y como hacías con la base de datos local. Todas las operaciones pueden realizarse de igual manera en una y otra, así como ambas pueden ser gestionadas a través de Mongo Compass como ya has visto.
+Despídete de tu base de datos local porque en adelante trabajarás contra la base de datos remota, tal y como hacías con la base de datos local. Todas las operaciones pueden realizarse de igual manera en una y otra, así como ambas pueden ser gestionadas a través de Mongo Compass como ya has visto.
 
 1. Accede al archivo .env de tu aplicación de Express, y crea la variable de entorno `DB_REMOTE`con el string de conexión de MongoDB atlas como valor. 
 
@@ -62,6 +62,9 @@ Ve despidiéndote de tu base de datos local porque en adelante trabajarás contr
 
 2. Modifica el método `connect()`de tu aplicación, tomando como valor de conexión esta variable de entorno:
 
-    `mongoose.connect(process.env.DB_REMOTE, ...`
+    ````javascript
+    mongoose
+       .connect(process.env.DB_REMOTE, ...
+    ````
 
 3. Reinicia el servidor y comprueba cómo sigue funcionando con normalidad, ahora contra MongoDB Atlas.
