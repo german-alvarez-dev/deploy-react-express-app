@@ -26,6 +26,8 @@ Tu aplicación local ha dejado de funcionar. El paquete create-react-app no disp
 
 De esta forma `env.process.REACT_APP_API_URL` tomará dos valores: el del script en un entorno local, y el de Heroku en el entorno remoto. Tendremos pues el cliente funcionando de manera paralela en ambos entornos.
 
+Reinicia tu cliente y comprueba cómo funciona con normalidad, dirigiendo las peticion es al servidor local.
+
 ## Paso a producción
 
 Transferir los archivos a la aplicación de Heroku permitirá acceder tu cliente de React desde cualquier navegador, a la vez que mantendrá todas sus funcionalidades en el entorno local, donde puedes seguir desarrollando.
