@@ -16,7 +16,7 @@ Debido a que las peticiones que se realizan desde tus servicios deben ir dirigid
    
 2.  Modifica **todos** tus servicios de Axios que ahora apuntan a `http://localhost:5000/api` para que, una vez subido el cliente a la aplicación de Heroku, tomen como `baseURL` el valor de la variable de entorno remoto que acabas de crear. 
 
-        `baseURL: env.process.REACT_APP_API_URL
+        baseURL: env.process.REACT_APP_API_URL
 
 ## Variable de entorno local
 
@@ -24,7 +24,7 @@ Tu aplicación local ha dejado de funcionar. El paquete create-react-app no disp
 
     "start": "REACT_APP_API_URL=http://localhost:5000/api react-scripts start",  
 
-De esta forma `env.dev.REACT_APP_API_URL` tomará dos valores: el del script en un entorno local, y el de Heroku en el entorno remoto. Tendremos pues el cliente funcionando de manera paralela en ambos entornos.
+De esta forma `env.process.REACT_APP_API_URL` tomará dos valores: el del script en un entorno local, y el de Heroku en el entorno remoto. Tendremos pues el cliente funcionando de manera paralela en ambos entornos.
 
 ## Paso a producción
 
