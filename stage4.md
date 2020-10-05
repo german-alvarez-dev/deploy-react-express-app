@@ -20,8 +20,8 @@ Debido a que el archivo `.env` no será desplegado, es necesario habilitar las v
 
 3. Una vez has realizado este proceso para cada una, incluye dos variables adicionales en vistas a garantizar frente a CORS el acceso de tu cliente a la API, tanto si se realiza desde el entorno local como desde el remoto:
 
-       DOMAIN_REMOTE="https://myclient.herokuapp.com"   
-       DOMAIN_LOCAL="http://localhost:3000"
+       DOMAIN_REMOTE=https://myclient.herokuapp.com  
+       DOMAIN_LOCAL=http://localhost:3000
 
 4. No olvides incluir igualmente estas dos variables en el archivo `.env` de tu entorno local.
 
