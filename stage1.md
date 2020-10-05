@@ -3,7 +3,7 @@
 
 MongoDB Atlas ofrece un servicio gratuito para alojar bases de datos en remoto, pudiendo accederlas a través de un string de conexión que sustituirá a tu actual `mongodb://localhost/db_local`
 
-Si ya dispones de una cuenta de MongoDB Atlas y ya obtuviste un string de conexión previamente, accede a tu cuenta y ve al inicio de la web. Selecciona en la esquina superior derecha *New Project*, dale un nombre para crearlo y retoma este manual en el punto 4.
+Si ya dispones de una cuenta de MongoDB Atlas y ya obtuviste un string de conexión previamente, accede a tu cuenta y ve al inicio de la web. Selecciona en la esquina superior derecha *New Project*, dale un nombre para crearlo y haz click sobre *Build a Cluster*. Retoma entonces este manual en el punto 4.
 
 ## Registro y configuración de Cluster
 
