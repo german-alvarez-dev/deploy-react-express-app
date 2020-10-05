@@ -18,6 +18,7 @@ Mongo Compass permite la conexión tanto a las bases de datos locales como a un 
 MongoDB permite exportar colecciones de una BBDD local como archivos JSON que después pueden importarse en la BBDD remota. 
 
 1. Accede mediante la terminal al directorio donde deseas crear los archivos JSON de tus colecciones.
+
 2. Haz uso del comando `mongoexport` de MongoDB para exportarte la primera colección, siguiendo esta sintaxis:
 
    `mongoexport --collection=<collection> --db=<database> --out=<file>`
