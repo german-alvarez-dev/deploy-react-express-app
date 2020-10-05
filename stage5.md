@@ -37,9 +37,11 @@ Transferir los archivos a la aplicación de Heroku permitirá acceder tu cliente
   ````
     git add .
     git commit -m "first client deploy on heroku app"  
-    git push heroku master
   ````
-3. Procede a la subida mediante el comando `git push heroku master`
+3. Procede a la subida
+       
+       git push heroku master
+       
 4. Una vez finalizado, comprueba la ausencia de errores en los logs mediante el comando `heroku logs --tail`
 5. Abre tu aplicación en el navegador mediante `heroku open`, o tecleando la URL de la misma. Podrás navegar a través de ella como lo haces en en entorno local.
 
