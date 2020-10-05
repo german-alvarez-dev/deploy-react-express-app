@@ -23,7 +23,7 @@ Si ya dispones de una cuenta de MongoDB Atlas y ya obtuviste un string de conexi
   Veremos que el campo *IP Address* toma el valor `0.0.0.0/0` permitiendo asi el acceso a la base de datos desde cualquier IP.  
   <img src="https://res.cloudinary.com/ironhack-german/image/upload/v1601659536/Captura_de_pantalla_2020-10-02_a_las_19.25.28.png" width="700"/><br/><br/>
   Seleccionar *Add IP Address.* <br/><br/>
-7. En la sección *Create a database user* de la ventana modal, rellenar el nombre de usuario para acceder a la base de datos y una contraseña. Seleccionar *Create database user*:
+7. En la sección *Create a database user* de la ventana modal, rellenar el nombre de usuario para acceder a la base de datos y una contraseña. Seleccionar *Create database User*:
   <img src="https://res.cloudinary.com/ironhack-german/image/upload/v1601659726/Captura_de_pantalla_2020-10-02_a_las_19.27.33.png" width="700"/><br/><br/> 
 8. A continuación, seleccionar *Choose a connection method*. <br/><br/>
 9. Entre los métodos de conexión, seleccionar *Connect using MongoDB Compass*:
