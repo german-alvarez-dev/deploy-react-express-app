@@ -14,10 +14,10 @@ Si ya dispones de una cuenta de MongoDB Atlas y ya obtuviste un string de conexi
   <img src="https://res.cloudinary.com/ironhack-german/image/upload/v1601658764/Captura_de_pantalla_2020-10-02_a_las_19.12.07.png" width="700"/><br/><br/>
 4. En la siguiente pantalla, mantener AWS y seleccionar un servidor europeo. Seleccionar *Create Cluster*:
   <img src="https://res.cloudinary.com/ironhack-german/image/upload/v1601659031/Captura_de_pantalla_2020-10-02_a_las_19.17.01.png" width="700"/><br/><br/>
-5. Una vez creado el Cluster, seleccionar *Connect*.
 
 ## Obtención del string de conexión
 
+5. Una vez creado el Cluster, seleccionar *Connect*.<br/><br/>
 6. En la sección *Add a connection IP address* de la ventana modal, seleccionar  *Allow Access from Anywhere*. 
   <img src="https://res.cloudinary.com/ironhack-german/image/upload/v1601659526/Captura_de_pantalla_2020-10-02_a_las_19.22.34.png" width="700"/><br/><br/>
   Veremos que el campo *IP Address* toma el valor `0.0.0.0/0` permitiendo asi el acceso a la base de datos desde cualquier IP.  
