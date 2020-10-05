@@ -6,6 +6,13 @@ En este punto tu aplicación está conectada a una base de datos local que es ac
 
 Realizaremos aquí las operaciones necesarias para transferir tu base de datos a un servidor de producción contra el que trabajarás en adelante, exportando las colecciones en tu equipo e importándolas en MongoDB Atlas.
 
+## Conexión de Mongo Compass con la base de datos remnota
+
+Mongo Compass permite la conexión tanto a las bases de datos locales como a un base de datos remota.
+
+1. Abre Mongo Compass y en el menú superior selecciona *Connect => Connect to...*
+2. Pega tu string de conexión de MongoDB Atlas y selecciona Connect. Estarás visualizando asi tu Cluster donde a continuación importaremos tus datos. 
+
 ## Exportación de base de datos local
 
 MongoDB permite exportar colecciones de una BBDD local como archivos JSON que después pueden importarse en la BBDD remota. 
@@ -25,16 +32,12 @@ MongoDB permite exportar colecciones de una BBDD local como archivos JSON que de
 
 3. Comprueba cómo se ha creado el archivo con los datos y repite el proceso para colección, cambiando el nombre de la colección y el nombre del archivo en cada una.
 
-
-
 ## Importación de base de datos remota
 
 MongoDB Atlas permite alojar y gestionar bases de datos en sus servidores a través del string de conexión obtenido tras el registro.
 
-1. Abre Mongo Compass y en el menú superior selecciona *Connect => Connect to...*
-2. Pega tu string de conexión de MongoDB Atlas y selecciona Connect. Estarás visualizando asi tu Cluster donde a continuación importaremos tus datos. 
-3. Accede mediante la terminal al directorio donde se encuentran los archivos JSON de tus colecciones.
-4. Haz uso del comando `mongoimport` de MongoDB para importarte la primera colección, siguiendo esta sintaxis:
+1. Accede mediante la terminal al directorio donde se encuentran los archivos JSON de tus colecciones.
+2. Haz uso del comando `mongoimport` de MongoDB para importarte la primera colección, siguiendo esta sintaxis:
 
    `mongoimport --uri="<connectionstring>" --collection=<collection> --out=<file>`
     
@@ -48,8 +51,8 @@ MongoDB Atlas permite alojar y gestionar bases de datos en sus servidores a trav
      
      Si ya habías importado antes esta colección, incluye el flag `--drop` para vaciarla previo a re-importarla y evitar que se acumulen los registros.
 
-5. En Mongo Compass, actualiza la vista y comprueba que se ha creado tanto tu colección como los documentos que la conforman.
-6. Repite el proceso para cada colección, cambiando el nombre de la colección y el nombre del archivo en cada comando.
+3. En Mongo Compass, actualiza la vista y comprueba que se ha creado tanto tu colección como los documentos que la conforman.
+4. Repite el proceso para cada colección, cambiando el nombre de la colección y el nombre del archivo en cada comando.
 
 
 ## Conexión de la API local con la base de datos remota
