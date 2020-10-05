@@ -6,7 +6,7 @@ Transferir tu aplicación de React a producción supone compilarla para desplega
 
 ## Variable de entorno remoto
 
-Debido a que las peticiones que se realizan desde tus servicios deben ir dirigidas hacia `http://localhost:6000/api` cuando se encuentre en el entorno local, y hacia  `https://myserver.herokuapp.com/api` en un entorno remoto, es necesario crear las variables de entorno en ambos contextos.
+Debido a que las peticiones que se realizan desde tus servicios deben ir dirigidas hacia `http://localhost:5000/api` cuando se encuentre en el entorno local, y hacia  `https://myserver.herokuapp.com/api` en un entorno remoto, es necesario crear las variables de entorno en ambos contextos.
  
 1. Accede mediante la terminal al directorio raíz de tu cliente y declara una variable de entorno remoto en tu aplicación de Heroku:
 
