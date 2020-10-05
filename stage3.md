@@ -40,7 +40,7 @@ MongoDB Atlas permite alojar y gestionar bases de datos en sus servidores a trav
 1. Accede mediante la terminal al directorio donde se encuentran los archivos JSON de tus colecciones.
 2. Haz uso del comando `mongoimport` de MongoDB para importarte la primera colección, siguiendo esta sintaxis:
 
-   `mongoimport --uri="<connectionstring>" --collection=<collection> --out=<file>`
+   `mongoimport --uri="<connectionstring>" --collection=<collection> --file=<file>`
     
     - Sustituye &lt;connectionstring> por el string de conexión de MongoDB Atlas 
     - Sustituye &lt;collection> por el nombre de la colección que se creará
@@ -48,7 +48,7 @@ MongoDB Atlas permite alojar y gestionar bases de datos en sus servidores a trav
 
    Ejemplo:
  
-     `mongoimport --uri="mongodb+srv://your_user:your_pwd.ooyyy.mongodb.net/school" --collection=students --out=students-collection.json`
+     `mongoimport --uri="mongodb+srv://your_user:your_pwd.ooyyy.mongodb.net/school" --collection=students --file=students-collection.json`
      
      Si ya habías importado antes esta colección, incluye el flag `--drop` para vaciarla previo a re-importarla y evitar que se acumulen los registros.
 
