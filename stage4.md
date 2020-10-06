@@ -10,7 +10,7 @@ Debido a que el archivo `.env` no será desplegado, es necesario habilitar las v
  
 1. Accede mediante la terminal al directorio raíz de tu servidor, donde se encuentra el `package.json`. Puedes comprobar en cualquier momento la aplicación de Heroku asociada a un Git mediante el comando
 
-       git apps:info
+       heroku apps:info
 
 2. Declara cada una de las variables de entorno de tu archivo `.env` con el comando `heroku config:set NOMBREVARIABLE=”VALORVARIABLE”`. Ejemplo:
 
