@@ -10,7 +10,7 @@ Debido a que las peticiones que se realizan desde tus servicios deben ir dirigid
  
 1. Accede mediante la terminal al directorio raíz de tu cliente y declara una variable de entorno remoto en tu aplicación de Heroku:
 
-       heroku config:set --app=myServer REACT_APP_API_URL="https://yourserver.herokuapp.com/api"
+       heroku config:set REACT_APP_API_URL="https://yourserver.herokuapp.com/api" --app myServer 
 
    Es importante que su nombre comience con `REACT_APP_`, de lo contrario create-react-app no la reconocerá en el siguiente paso, y recuerda sustituir `myServer` por el nombre de tu aplicación de servidor.
    
