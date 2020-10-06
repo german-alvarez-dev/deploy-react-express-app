@@ -3,25 +3,13 @@
 # Paso a producción: cliente
 
 Transferir tu aplicación de React a producción supone compilarla para desplegar los archivos que la componen a un servidor externo, permitiendo así que las peticiones que ahora se emiten desde `http://localhost:3000` pasen a realizarse desde `https://myclient.herokuapp.com`.
-
-
-## Enlace del directorio `/client` a la aplicación de cliente en Heroku
-
-Accede mediante la terminal al directorio raíz de tu cliente, donde se encuentra el `package.json`, y enlázalo al Git de la aplicación de Heroku mediamnte el comando 
-
-       heroku git:remote -a myClient
-
-
-Puedes comprobar en cualquier momento la aplicación de Heroku asociada a un Git mediante el comando
-
-       heroku apps:info
        
 
 ## Variable de entorno remoto
 
 Debido a que las peticiones que se realizan desde tus servicios deben ir dirigidas hacia `http://localhost:5000/api` cuando se encuentre en el entorno local, y hacia  `https://myserver.herokuapp.com/api` en un entorno remoto, es necesario crear las variables de entorno en ambos contextos.
  
-1. Accede mediante la terminal al directorio raíz de tu cliente y declara una variable de entorno remoto en tu aplicación de Heroku:
+1. Accede mediante la terminal al directorio raíz de tu cliente y asegúrate de que está enlazado al Git de cliente mediante `heroku apps:info`. Declara entonces una variable de entorno remoto en tu aplicación de Heroku:
 
        heroku config:set REACT_APP_API_URL="https://yourserver.herokuapp.com/api" --app myClient
 
