@@ -38,7 +38,7 @@ Para ello, accede mediante la terminal a la raíz de tu aplicación cliente `/cl
 
     heroku create myclient
     
-Ahora enlaza el directorio `/client` en el que te encuentras al Git de la aplicación de Heroku mediamnte el comando 
+Ahora enlaza el directorio `/client` en el que te encuentras al Git de la aplicación de Heroku mediante el comando 
 
     heroku git:remote -a myclient   
 
