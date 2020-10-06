@@ -24,7 +24,7 @@ Tu aplicación local ha dejado de funcionar. El paquete create-react-app no disp
 
     "start": "REACT_APP_API_URL=http://localhost:5000/api react-scripts start",  
 
-De esta forma `env.process.REACT_APP_API_URL` tomará dos valores: el del script en un entorno local, y el de Heroku en el entorno remoto. Tendremos pues el cliente funcionando de manera paralela en ambos entornos.
+De esta forma `process.env.REACT_APP_API_URL` tomará dos valores: el del script en un entorno local, y el de Heroku en el entorno remoto. Tendremos pues el cliente funcionando de manera paralela en ambos entornos.
 
 Reinicia tu cliente y comprueba cómo funciona con normalidad, dirigiendo las peticion es al servidor local.
 
