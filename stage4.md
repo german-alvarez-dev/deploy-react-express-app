@@ -14,9 +14,9 @@ Debido a que el archivo `.env` no será desplegado, es necesario habilitar las v
 
 2. Declara cada una de las variables de entorno de tu archivo `.env` con el comando `heroku config:set NOMBREVARIABLE=”VALORVARIABLE”`. Ejemplo:
 
-       heroku config:set CLOUDINARY_NAME="german-cloud"
+       heroku config:set CLOUDINARY_NAME="german-cloud" --app myServer
   
-   Puedes consultar el valor de cualquier variable de entorno con el comando `heroku config:get NOMBREVARIABLE` 
+   No olvides sustituir `myServer` por el nombre de tu aplicación servidor. Puedes consultar el valor de cualquier variable de entorno con el comando `heroku config:get NOMBREVARIABLE` 
 
 3. Una vez has realizado este proceso para cada una, incluye dos variables adicionales en vistas a garantizar frente a CORS el acceso de tu cliente a la API, tanto si se realiza desde el entorno local como desde el remoto:
 
