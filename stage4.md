@@ -8,7 +8,11 @@ Transferir tu API local a producción supone desplegar los archivos que la compo
 
 Debido a que el archivo `.env` no será desplegado, es necesario habilitar las variables de entorno en tu aplicación de Heroku.
  
-1. Accede mediante la terminal al directorio raíz de tu servidor, donde se encuentra el `package.json`. Puedes comprobar en cualquier momento la aplicación de Heroku asociada a un Git mediante el comando
+1. Accede mediante la terminal al directorio raíz de tu servidor, donde se encuentra el `package.json`, y enlázalo al Git de la aplicación de heroku mediamnte el comando 
+
+       heroku git:remote -a myServer
+
+  Puedes comprobar en cualquier momento la aplicación de Heroku asociada a un Git mediante el comando
 
        heroku apps:info
 
