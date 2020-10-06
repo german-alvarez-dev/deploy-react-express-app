@@ -30,21 +30,21 @@ Podremos cerrar la sesión cuando necesitemos mediante el comando `heroku logout
 
 ## Creación de aplicación cliente en Heroku
 
-Alojaremos nuestro cliente de React en una aplicación de Heroku. Elige un buen nombre en este punto, ya que este será el que Heroku incluya en la URL pública con la que se podrá acceder a tu aplicación desde cualquier navegador. Es por ello que, según el anterior ejemplo, la URL final de tu producto sería:
+Alojaremos nuestro cliente de React en una aplicación de Heroku. Elige un buen nombre en este punto, ya que este será el que Heroku incluya en la URL pública con la que se podrá acceder a tu aplicación desde cualquier navegador. Es por ello que, si creases una aplicación de nombre `myclient`, la URL final de tu producto sería:
 
     https://myclient.herokuapp.com/
     
-Para ello, accede mediante la terminal a la raíz de tu aplicación cliente `/client`, donde se encuentra su `package.json`, e introduce el comando `heroku create <appname>`. Ejemplo:
+1. Accede mediante la terminal a la raíz de tu aplicación cliente `/client`, donde se encuentra su `package.json`, e introduce el comando `heroku create <appname>`. Ejemplo:
 
-    heroku create myclient
+  `heroku create myclient`
     
-Ahora enlaza el directorio `/client` en el que te encuentras al Git de la aplicación de Heroku mediante el comando 
+2. Ahora enlaza el directorio `/client` en el que te encuentras al Git de la aplicación de Heroku mediante el comando 
 
-    heroku git:remote -a myclient   
+  `heroku git:remote -a myclient`
 
-Puedes comprobar en cualquier momento la aplicación de Heroku asociada a un Git mediante el comando
+3. Puedes comprobar en cualquier momento la aplicación de Heroku asociada a un Git mediante el comando
 
-    heroku apps:info 
+  `heroku apps:info`
 
 Una vez que hayas procedido, podrás acceder a esa URL. Recuerda que el número máximo de aplicaciones que podrás crear en una cuenta de Heroku sin indicar los datos de tu tarjeta de crédito es de 5 aplicaciones.
 
