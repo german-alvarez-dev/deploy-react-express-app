@@ -8,7 +8,7 @@ El objetivo final que perseguimos con el proceso de pasar a producción (desplie
 
 Heroku ofrece un servicio gratuito de alojamiento para aplicaciones basadas en NodeJS, pudiendo desplegar a sus servidores los archivos tanto de tu cliente como de tu servidor y obteniendo así una URL para cada uno que permitirá accederlos.
 
-Tú elegirás qué nombre deseas para tus aplicaciones, pero en adelante usaremos para esta documentación las URLs `https://myclient.herokuapp.com/`y `https://myserver.herokuapp.com/` como ejemplo de cliente y servidor, respectivamente. 
+Tú elegirás qué nombre deseas para tus aplicaciones, pero en adelante usaremos para esta documentación las URLs `https://myclient.herokuapp.com/`y `https://myserver.herokuapp.com/` como ejemplo de cliente y servidor, respectivamente. Si tu proyecto se llama, por ejemplo, Donuts Planet, sería ideal elegir un nombre como `donuts-planet` para la aplicación de cliente y `donuts-planet-api` para la de servidor.
 
 ## Registro 
 Accede a [Heroku](https://www.heroku.com/) y realiza el proceso de registro con los datos personales.
