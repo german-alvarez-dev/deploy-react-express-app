@@ -16,7 +16,7 @@ Debido a que las peticiones que se realizan desde tus servicios deben ir dirigid
    
 2.  Modifica **todos** tus servicios de Axios que ahora apuntan a `http://localhost:5000/api` para que, una vez subido el cliente a la aplicación de Heroku, tomen como `baseURL` el valor de la variable de entorno remoto que acabas de crear. 
 
-        baseURL: env.process.REACT_APP_API_URL
+        baseURL: process.env.REACT_APP_API_URL
 
 ## Variable de entorno local
 
