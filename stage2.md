@@ -12,7 +12,7 @@ Heroku ofrece un servicio gratuito de alojamiento para aplicaciones basadas en N
 
 Tú elegirás qué nombre deseas para tus aplicaciones, aunque en adelante usaremos para esta documentación las URLs `https://donuts-planet.herokuapp.com/`y `https://donuts-planet-api.herokuapp.com/` como ejemplo de cliente y servidor, respectivamente. 
 
-Si tu proyecto se llama, por ejemplo, Retaurants Locator, sería ideal elegir un nombre como `restaurants-locator` para el cliente, lo que dará lugar a la URL https://restaurants-locator.herokuapp.com/ y `restaurants-locator-api` para el servidor, lo que dará lugar a la URL https://restaurants-locator-api.herokuapp.com/ y restaurants-locator-api para el servidor.
+Si tu proyecto se llama, por ejemplo, Retaurants Locator, sería ideal elegir un nombre como `restaurants-locator` para el cliente, lo que dará lugar a la URL https://restaurants-locator.herokuapp.com/ y `restaurants-locator-api` para el servidor, lo que dará lugar a la URL https://restaurants-locator-api.herokuapp.com/.
 
 No llames a tu aplicación `donuts-planet`. Este nombre sólo lo usaremos a efectos ejemplificativos.
 
