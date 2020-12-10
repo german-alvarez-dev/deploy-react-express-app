@@ -4,20 +4,27 @@
 
 Describir el proceso para deplegar a producción en [Heroku](https://www.heroku.com/) + [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) una SPA con cliente [`create-react-app`](https://create-react-app.dev/docs/getting-started/) y servidor [ExpressJS](https://expressjs.com/).
 
-## Especificaciones
+## Objetivo del deploy
 
-El deploy se realizará en base a los siguientes objetivos:
+**Base de datos**: hacer el paso a producción de la base de datos local a una base de datos remota en MongoDB Atlas:
 
-- Disponer de los entornos de desarrollo y producción **activos de forma paralela**.
-- Consumir la base de datos desde MongoDB Atlas.
-- Disponer del cliente y servidor alojados en dos aplicaciones independientes de Heroku.
+1. Realizar el registro en MongoDB Atlas y crear la base de datos remota (stage 1)
+2. Exportar los datos de la base de datos local e importaros en la base de datos remota (stage 2)
 
+**Aplicaciones cliente/servidor**: crear en Heroku las aplicaciones de cliente y servidor remotas donde desplegar las locales:
+
+1. Realizar el registro en Heroku y crear las aplicaciones remotas (stage 3)
+
+**Deploy cliente/servidor**: crear en Heroku las aplicaciones de cliente y servidor remotas donde desplegar las locales:
+
+1. Desplegar aplicación de servidor en Heroku (stage 4)
+2. Desplegar aplicación de servidor en Heroku (stage 5)
 
 ## Fases de paso a producción
 
 1. [Registro en MongoDB Atlas y configuración base](https://github.com/german-alvarez-dev/deploy-react-express-app/blob/main/stage1.md)
-2. [Registro en Heroku y creación de aplicaciones para cliente y servidor](https://github.com/german-alvarez-dev/deploy-react-express-app/blob/main/stage2.md)
-3. [Paso a producción: base de datos](https://github.com/german-alvarez-dev/deploy-react-express-app/blob/main/stage3.md)
+2. [Paso a producción: base de datos](https://github.com/german-alvarez-dev/deploy-react-express-app/blob/main/stage3.md)
+3. [Registro en Heroku y creación de aplicaciones para cliente y servidor](https://github.com/german-alvarez-dev/deploy-react-express-app/blob/main/stage2.md)
 4. [Paso a producción: servidor](https://github.com/german-alvarez-dev/deploy-react-express-app/blob/main/stage4.md)
 5. [Paso a producción: cliente](https://github.com/german-alvarez-dev/deploy-react-express-app/blob/main/stage5.md)
 
