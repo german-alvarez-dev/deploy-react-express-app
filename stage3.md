@@ -1,21 +1,20 @@
-
-
 # Paso a producción: base de datos
 
-En este punto tu aplicación está conectada a una base de datos local que es accedida a través del método `connect()`de Mongoose y el string de conexión `mongodb://localhost/yourdatabase`. Esto es apto para un entorno local de desarrollo, pero no sería posible accederla desde un entorno de producción ya que, valga la redundancia, es *local*. Tu equipo no cumple ninguno de los requisitos de accesibilidad, capacidad o concurrencia de un servidor, [entre otros](https://preview.my.ironhack.com/lms/courses/course-v1:IRONHACK+WDFT+202008_MAD/units/ironhack-course-chapter_3-sequential_1-vertical#Introduction-to-Databases). 
+En este punto, tu aplicación de ExpressJS está conectada a una base de datos local de MongoDB que es accedida a través del método `connect()`de Mongoose y el string de conexión `mongodb://localhost/yourdatabase`. Esto es apto para un entorno local de desarrollo, pero no sería posible accederla desde un entorno de producción ya que, valga la redundancia, es *local*. Tu equipo no cumple ninguno de los requisitos de accesibilidad, capacidad o concurrencia de un servidor, entre otros. 
 
-Realizaremos aquí las operaciones necesarias para transferir tu base de datos a un servidor de producción contra el que trabajarás en adelante, exportando las colecciones en tu equipo e importándolas en MongoDB Atlas.
+Realizaremos aquí las operaciones necesarias para transferir tu base de datos a la nube: exportar las colecciones locales de tu equipo a una base de datos remota (de producción) en [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) contra la que trabajarás en adelante.
 
 ## Conexión de Mongo Compass con la base de datos remnota
 
 Mongo Compass permite la conexión tanto a las bases de datos locales como a un base de datos remota.
 
 1. Abre Mongo Compass y en el menú superior selecciona *Connect => Connect to...*
+
 2. Pega tu string de conexión de MongoDB Atlas y selecciona Connect. Estarás visualizando asi tu Cluster donde a continuación importaremos tus datos. 
 
 ## Exportación de base de datos local
 
-MongoDB permite exportar colecciones de una BBDD local como archivos JSON que después pueden importarse en la BBDD remota. 
+MongoDB permite exportar como archivos JSON tus colecciones de una BBDD local. Estos pueden ser después importados a una BBDD remota. 
 
 1. Accede mediante la terminal al directorio donde deseas crear los archivos JSON de tus colecciones.
 
@@ -23,9 +22,9 @@ MongoDB permite exportar colecciones de una BBDD local como archivos JSON que de
 
    `mongoexport --collection=<collection> --db=<database> --out=<file>`
     
-    - Sustituye &lt;collection> por el nombre de la colección
-    - Sustituye &lt;database> por el nombre de la base de datos
-    - Sustituye &lt;file> por el nombre del archivo de salida.
+    - Sustituye `<collection>` por el nombre de la colección
+    - Sustituye `<database>` por el nombre de la base de datos
+    - Sustituye `<file>` por el nombre del archivo que creará MongoDB con tu colección, con extensión `.json`.
 
    Ejemplo:
  
@@ -42,9 +41,9 @@ MongoDB Atlas permite alojar y gestionar bases de datos en sus servidores a trav
 
    `mongoimport --uri="<connectionstring>" --collection=<collection> --file=<file>`
     
-    - Sustituye &lt;connectionstring> por el string de conexión de MongoDB Atlas 
-    - Sustituye &lt;collection> por el nombre de la colección que se creará
-    - Sustituye &lt;file> por el nombre del archivo donde se encuentran los datos de la colección
+    - Sustituye `<connectionstring>` por el string de conexión de MongoDB Atlas, entre comillas. 
+    - Sustituye `<collection>` por el nombre de la colección que se creará, que debe ser igual al nombre de la colección local.
+    - Sustituye `<file>` por el nombre del archivo donde se encuentran los datos de la colección.
 
    Ejemplo:
  
@@ -52,11 +51,11 @@ MongoDB Atlas permite alojar y gestionar bases de datos en sus servidores a trav
      
      Si ya habías importado antes esta colección, incluye el flag `--drop` para vaciarla previo a re-importarla y evitar que se acumulen los registros.
 
-3. En Mongo Compass, actualiza la vista y comprueba que se ha creado tanto tu colección como los documentos que la conforman.
+3. En Mongo Compass, actualiza la vista y comprueba que se ha creado tanto tu colección como los documentos que la conforman. Lo que estás viendo es ya tu base de datos remota.
 4. Repite el proceso para cada colección, cambiando el nombre de la colección y el nombre del archivo en cada comando.
 
 
-## Conexión de la API local con la base de datos remota
+## Conexión de la base de datos remota con tu aplicación de ExpressJS
 
 Despídete de tu base de datos local porque en adelante trabajarás contra la base de datos remota, tal y como hacías con la base de datos local. Todas las operaciones pueden realizarse de igual manera en una y otra, así como ambas pueden ser gestionadas a través de Mongo Compass como ya has visto.
 
