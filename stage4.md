@@ -10,20 +10,20 @@ Debido a que el archivo `.env` no será desplegado, es necesario habilitar las v
 
 1. Accede mediante la terminal al directorio raíz de tu servidor y asegúrate de que está enlazado al Git de servidor mediante `heroku apps:info`. Declara entonces cada una de las variables de entorno de tu archivo `.env` con el comando `heroku config:set NOMBREVARIABLE=”VALORVARIABLE” --app nombreApp`. Ejemplo:
 
-       heroku config:set CLOUDINARY_NAME="german-cloud" --app myServer
+       heroku config:set CLOUDINARY_NAME="german-cloud" --app planet-donuts-api
   
-   No olvides sustituir `myServer` por el nombre de tu aplicación servidor. Puedes consultar el valor de cualquier variable de entorno con el comando `heroku config:get NOMBREVARIABLE` 
+   No olvides sustituir `planet-donuts-api` por el nombre de tu aplicación servidor. Puedes consultar el valor de cualquier variable de entorno con el comando `heroku config:get NOMBREVARIABLE` 
 
 2. Una vez has realizado este proceso para cada una, incluye dos variables adicionales en vistas a garantizar frente a CORS el acceso de tu cliente a la API, tanto si se realiza desde el entorno local como desde el remoto:
 
-       DOMAIN_REMOTE=https://myclient.herokuapp.com  
+       DOMAIN_REMOTE=https://planet-donuts.herokuapp.com  
        DOMAIN_LOCAL=http://localhost:3000
 
 3. No olvides incluir igualmente estas dos variables en el archivo `.env` de tu entorno local.
 
 ## Configuración multi dominio en CORS
 
-En este punto tu API acepta peticiones desde `http://localhost:3000` gracias a la configuración de CORS. En adelante debe también aceptarlas desde `https://myclient.herokuapp.com` ya que tu cliente necesitará comunicarse con la API tanto desde el entorno de desarrollo como de producción.
+En este punto tu API acepta peticiones desde `http://localhost:3000` gracias a la configuración de CORS. En adelante debe también aceptarlas desde `https://planet-donuts.herokuapp.com` ya que tu cliente necesitará comunicarse con la API tanto desde el entorno de desarrollo como de producción.
 
 Para ello, incluye la nueva variable de entorno `DOMAIN_REMOTE` a la *whitelist*, que contiene los dominios aceptados por CORS:
 
