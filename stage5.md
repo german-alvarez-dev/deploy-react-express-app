@@ -2,18 +2,18 @@
 
 # Paso a producción: cliente
 
-Transferir tu aplicación de React a producción supone compilarla para desplegar los archivos que la componen a un servidor externo, permitiendo así que las peticiones que ahora se emiten desde `http://localhost:3000` pasen a realizarse desde `https://myclient.herokuapp.com`.
+Transferir tu aplicación de React a producción supone compilarla para desplegar los archivos que la componen a un servidor externo, permitiendo así que las peticiones que ahora se emiten desde `http://localhost:3000` pasen a realizarse desde `https://planet-donuts.herokuapp.com`.
        
 
 ## Variable de entorno remoto
 
-Debido a que las peticiones que se realizan desde tus servicios deben ir dirigidas hacia `http://localhost:5000/api` cuando se encuentre en el entorno local, y hacia  `https://myserver.herokuapp.com/api` en un entorno remoto, es necesario crear las variables de entorno en ambos contextos.
+Debido a que las peticiones que se realizan desde tus servicios deben ir dirigidas hacia `http://localhost:5000/api` cuando se encuentre en el entorno local, y hacia  `https://planet-donuts-api.herokuapp.com/api` en un entorno remoto, es necesario crear las variables de entorno en ambos contextos.
  
 1. Accede mediante la terminal al directorio raíz de tu cliente y asegúrate de que está enlazado al Git de cliente mediante `heroku apps:info`. Declara entonces una variable de entorno remoto en tu aplicación de Heroku:
 
-       heroku config:set REACT_APP_API_URL="https://yourserver.herokuapp.com/api" --app myClient
+       heroku config:set REACT_APP_API_URL="https://planet-donuts-api.herokuapp.com/api" --app planet-donuts
 
-   Es importante que su nombre comience con `REACT_APP_`, de lo contrario create-react-app no la reconocerá en el siguiente paso, y recuerda sustituir `myClient` por el nombre de tu aplicación de cliente.
+   Es importante que su nombre comience con `REACT_APP_`, de lo contrario create-react-app no la reconocerá en el siguiente paso, y recuerda sustituir `planet-donuts` por el nombre de tu aplicación de cliente.
    
 2.  Modifica **todos** tus servicios de Axios que ahora apuntan a `http://localhost:5000/api` para que, una vez subido el cliente a la aplicación de Heroku, tomen como `baseURL` el valor de la variable de entorno remoto que acabas de crear. 
 
