@@ -2,7 +2,7 @@
 
 # Paso a producción: servidor
 
-Transferir tu API local a producción supone desplegar los archivos que la componen a un servidor externo, permitiendo así que las respuestas que ahora se emiten desde `http://localhost:6000/api` pasen a realizarse desde `https://myserver.herokuapp.com/api`.
+Transferir tu API local a producción supone desplegar los archivos que la componen a un servidor externo, permitiendo así que las respuestas que ahora se emiten desde `http://localhost:6000/api` pasen a realizarse desde `https://planet-donuts-api.herokuapp.com/api`.
        
 ## Variables de entorno remoto
 
