@@ -65,7 +65,7 @@ Usaremos de nuevo el comando `create` para crear nuestra aplicación donde aloja
 
 No olvides cambiar también el nombre de la aplicación y del remoto: 
 
-    heroku create donuts-planet-api -b https://github.com/mars/create-react-app-buildpack.git
+    heroku create donuts-planet-api
     
     git remote add nombre_remoto https://git.heroku.com/xxx.git
     
