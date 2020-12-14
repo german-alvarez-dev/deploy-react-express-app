@@ -39,11 +39,10 @@ Transferir los archivos a la aplicación de Heroku hará accesible tu API desde 
 2. Agrega los cambios y realiza un primer commit:
        
        git add .
-       git commit -m "first server deploy on heroku app"  
 
-3. Procede a la subida
+3. Procede a la subida desde el directorio raíz del proyecto, donde se encuentran los directorios `/client` y `/server`:
        
-       git push heroku master
+       git subtree push --prefix=server nombre_remoto master
 
 4. Una vez finalizado, comprueba la ausencia de errores en los logs mediante el comando `heroku logs --tail`
 5. Abre tu aplicación en el navegador mediante `heroku open`, o tecleando la URL de la misma. Podrás comprobar si los endpoints de tu API mantienen su funcionalidad, ahora en remoto.
