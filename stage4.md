@@ -39,6 +39,7 @@ Transferir los archivos a la aplicación de Heroku hará accesible tu API desde 
 2. Agrega los cambios y realiza un primer commit:
        
        git add .
+       git commit -m "detalles asociados al commit"
 
 3. Procede a la subida desde el directorio raíz del proyecto, donde se encuentran los directorios `/client` y `/server`:
        
