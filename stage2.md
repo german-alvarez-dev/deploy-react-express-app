@@ -42,13 +42,13 @@ Alojaremos nuestro cliente de React en una aplicación de Heroku. Elige un buen 
 1. Accede mediante la terminal a la raíz de tu aplicación cliente `/client`, donde se encuentra su `package.json`, e introduce el comando `heroku create <appname>`. Ejemplo:
 
    ````
-   heroku create donuts-planet
+   heroku create donuts-planet -b https://github.com/mars/create-react-app-buildpack.git
    ````
 
-2. Ahora enlaza el directorio `/client` en el que te encuentras al Git de la aplicación de Heroku mediante el comando 
+2. Ahora enlaza el directorio `/client` en el que te encuentras al Git de la aplicación de Heroku, 
 
    ````
-   heroku git:remote -a donuts-planet
+   git remote add nombre_remoto https://git.heroku.com/xxx.git
    ````
 
 3. Puedes comprobar en cualquier momento la aplicación de Heroku asociada a un Git mediante el comando
@@ -63,6 +63,7 @@ Una vez que hayas procedido, podrás acceder a esa URL. Recuerda que el número 
 
 Usaremos de nuevo el comando `create` para crear nuestra aplicación donde alojaremos tu API de Express, pero esta vez lo haremos accediendo mediante la terminal al directorio raíz de la aplicación de servidor `/server`, donde se encuentra su `package.json`: 
 
-    heroku create donuts-planet-api
-    heroku git:remote -a donuts-planet-api
-
+    heroku create donuts-planet-api -b https://github.com/mars/create-react-app-buildpack.git
+    
+    git remote add nombre_remoto https://git.heroku.com/xxx.git
+    
