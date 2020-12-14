@@ -63,7 +63,7 @@ Una vez que hayas procedido, podrás acceder a esa URL. Recuerda que el número 
 
 Usaremos de nuevo el comando `create` para crear nuestra aplicación donde alojaremos tu API de Express, pero esta vez lo haremos accediendo mediante la terminal al directorio raíz de la aplicación de servidor `/server`, donde se encuentra su `package.json`. 
 
-No olvides cambiar también el nombre de la aplicación y del remoto: 
+En este caso no es necesario Buildpack, y no olvides cambiar también el nombre de la aplicación y del remoto: 
 
     heroku create donuts-planet-api
     
