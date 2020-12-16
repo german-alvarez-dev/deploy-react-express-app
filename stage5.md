@@ -39,7 +39,7 @@ Transferir los archivos a la aplicación de Heroku permitirá acceder tu cliente
     git add .
     git commit -m "detalles asociados al commit" 
   ````
-3. Procede a la subida desde el directorio raíz del proyecto, donde se encuentran los directorios `/client` y `/server:
+3. Procede a la subida **desde el directorio raíz del proyecto**, donde se encuentran los directorios `/client` y `/server`:
        
        git subtree push --prefix=client nombre_remoto master
        
