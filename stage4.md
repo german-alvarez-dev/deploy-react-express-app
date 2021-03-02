@@ -8,7 +8,7 @@ Transferir tu API local a producción supone desplegar los archivos que la compo
 
 Debido a que el archivo `.env` no será desplegado, es necesario habilitar las variables de entorno en tu aplicación de Heroku.
 
-1. Accede mediante la terminal al directorio raíz de tu servidor y asegúrate de que está enlazado al Git de servidor mediante `heroku apps:info planet-donuts-api`. Declara entonces cada una de las variables de entorno de tu archivo `.env` (excepto `DOMAIN`) con el comando `heroku config:set NOMBREVARIABLE=”VALORVARIABLE” --app nombreApp`. Ejemplo:
+1. Accede mediante la terminal al directorio raíz de tu servidor y asegúrate de que está enlazado al Git de servidor mediante `heroku apps:info --app planet-donuts-api`. Declara entonces cada una de las variables de entorno de tu archivo `.env` (excepto `DOMAIN`) con el comando `heroku config:set NOMBREVARIABLE=”VALORVARIABLE” --app nombreApp`. Ejemplo:
 
        heroku config:set CLOUDINARY_NAME="german-cloud" --app planet-donuts-api
   
