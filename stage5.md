@@ -13,7 +13,7 @@ Esto permitirá que las peticiones que se realizan desde tus servicios en local 
  
 1. Accede mediante la terminal al directorio raíz de tu cliente y asegúrate de que está enlazado al Git de cliente mediante `heroku apps:info --app donuts-planet`. Declara entonces una variable de entorno remoto en tu aplicación de Heroku:
 
-       heroku config:set REACT_APP_API_URL="https://planet-donuts-api.herokuapp.com/api" --app planet-donuts
+       heroku config:set REACT_APP_API_URL=https://planet-donuts-api.herokuapp.com/api --app planet-donuts
 
    
 
