@@ -11,7 +11,7 @@ En este punto, todos tus servicios de Axios apuntan al BaseUrl `process.env.REAC
 
 Esto permitirá que las peticiones que se realizan desde tus servicios en local sigan apuntando a `http://localhost:5000/api` mientras que en remoto apuntarán a `https://planet-donuts-api.herokuapp.com/api`.
  
-1. Accede mediante la terminal al directorio raíz de tu cliente y asegúrate de que está enlazado al Git de cliente mediante `heroku apps:info`. Declara entonces una variable de entorno remoto en tu aplicación de Heroku:
+1. Accede mediante la terminal al directorio raíz de tu cliente y asegúrate de que está enlazado al Git de cliente mediante `heroku apps:info --app donuts-planet`. Declara entonces una variable de entorno remoto en tu aplicación de Heroku:
 
        heroku config:set REACT_APP_API_URL="https://planet-donuts-api.herokuapp.com/api" --app planet-donuts
 
