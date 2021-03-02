@@ -14,22 +14,10 @@ Debido a que el archivo `.env` no será desplegado, es necesario habilitar las v
   
    No olvides sustituir `planet-donuts-api` por el nombre de tu aplicación servidor. Puedes consultar el valor de cualquier variable de entorno con el comando `heroku config:get NOMBREVARIABLE` 
 
-2. Una vez has realizado este proceso para cada una, incluye dos variables adicionales en vistas a garantizar frente a CORS el acceso de tu cliente a la API, tanto si se realiza desde el entorno local como desde el remoto:
+2. Una vez has realizado este proceso para cada una, incluye la variable de entorno `DOMAIN` que en tu servidor local apunta a `http://localhost:3000` en vistas a que en remoto apunte a `https://donuts-planet.heorkuapp.com`, es decir, a tu cliente remoto. Esto garantiza frente a CORS el acceso de tu cliente remoto a la API:
 
-       DOMAIN_REMOTE=https://planet-donuts.herokuapp.com  
-       DOMAIN_LOCAL=http://localhost:3000
+       DOMAIN=https://planet-donuts.herokuapp.com  
 
-3. No olvides incluir igualmente estas dos variables en el archivo `.env` de tu entorno local.
-
-## Configuración multi dominio en CORS
-
-En este punto tu API acepta peticiones desde `http://localhost:3000` gracias a la configuración de CORS. En adelante debe también aceptarlas desde `https://planet-donuts.herokuapp.com` ya que tu cliente necesitará comunicarse con la API tanto desde el entorno de desarrollo como de producción.
-
-Para ello, incluye la nueva variable de entorno `DOMAIN_REMOTE` a la *whitelist*, que contiene los dominios aceptados por CORS:
-
-    const whitelist = [process.env.DOMAIN_REMOTE, process.env.DOMAIN_LOCAL]
-
-Comprueba cómo tu servidor sigue funcionando en local con normalidad.
 
 ## Paso a producción
 
@@ -41,7 +29,7 @@ Transferir los archivos a la aplicación de Heroku hará accesible tu API desde 
        git add .
        git commit -m "detalles asociados al commit"
 
-3. Procede a la subida desde el directorio raíz del proyecto, donde se encuentran los directorios `/client` y `/server`:
+3. Procede a la subida **desde el directorio raíz del proyecto**, donde se encuentran los directorios `/client` y `/server`:
        
        git subtree push --prefix=server nombre_remoto master
 
