@@ -16,7 +16,7 @@ Debido a que el archivo `.env` no será desplegado, es necesario habilitar las v
 
 2. Una vez has realizado este proceso para cada una, incluye la variable de entorno `DOMAIN` que en tu servidor local apunta a `http://localhost:3000` en vistas a que en remoto apunte a `https://donuts-planet.heorkuapp.com`, es decir, a tu cliente remoto. Esto garantiza frente a CORS el acceso de tu cliente remoto a la API:
 
-       DOMAIN=https://planet-donuts.herokuapp.com  
+       heroku config:set DOMAIN="https://planet-donuts.herokuapp.com" --app planet-donuts-api
 
 
 ## Paso a producción
