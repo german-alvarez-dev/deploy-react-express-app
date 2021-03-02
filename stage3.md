@@ -69,5 +69,5 @@ En este caso no es necesario Buildpack, y no olvides cambiar también el nombre 
     
     git remote add heroku_server_master https://git.heroku.com/xxx.git
     
-    heroku info donuts-planet-api
+    heroku info --app donuts-planet-api
     
