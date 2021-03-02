@@ -8,15 +8,15 @@ Transferir tu API local a producción supone desplegar los archivos que la compo
 
 Debido a que el archivo `.env` no será desplegado, es necesario habilitar las variables de entorno en tu aplicación de Heroku.
 
-1. Accede mediante la terminal al directorio raíz de tu servidor y asegúrate de que está enlazado al Git de servidor mediante `heroku apps:info --app planet-donuts-api`. Declara entonces cada una de las variables de entorno de tu archivo `.env` (excepto `DOMAIN`) con el comando `heroku config:set NOMBREVARIABLE=”VALORVARIABLE” --app nombreApp`. Ejemplo:
+1. Accede mediante la terminal al directorio raíz de tu servidor y asegúrate de que está enlazado al Git de servidor mediante `heroku apps:info --app planet-donuts-api`. Declara entonces cada una de las variables de entorno de tu archivo `.env` (excepto `DOMAIN`) con el comando `heroku config:set NOMBREVARIABLE=VALORVARIABLE --app nombreApp`. Ejemplo:
 
-       heroku config:set CLOUDINARY_NAME="german-cloud" --app planet-donuts-api
+       heroku config:set CLOUDINARY_NAME=german-cloud --app planet-donuts-api
   
    No olvides sustituir `planet-donuts-api` por el nombre de tu aplicación servidor. Puedes consultar el valor de cualquier variable de entorno con el comando `heroku config:get NOMBREVARIABLE` 
 
 2. Una vez hayas realizado este proceso para cada una, incluye la variable de entorno `DOMAIN` (la misma que en tu servidor local apunta a `http://localhost:3000`) pero con el valor `https://donuts-planet.heorkuapp.com`, es decir, apuntando a tu cliente remoto. Esto garantiza frente a CORS el acceso de tu cliente remoto a la API:
 
-       heroku config:set DOMAIN="https://planet-donuts.herokuapp.com" --app planet-donuts-api
+       heroku config:set DOMAIN=https://planet-donuts.herokuapp.com --app planet-donuts-api
 
 
 ## Paso a producción
