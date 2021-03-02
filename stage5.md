@@ -29,7 +29,7 @@ Transferir los archivos a la aplicación de Heroku permitirá acceder tu cliente
   ````
 3. Procede a la subida **desde el directorio raíz del proyecto**, donde se encuentran los directorios `/client` y `/server`:
        
-       git subtree push --prefix=client nombre_remoto master
+       git subtree push --prefix=client heroku_client_master master
        
 4. Una vez finalizado, comprueba la ausencia de errores en los logs mediante el comando `heroku logs --tail`
 5. Abre tu aplicación en el navegador mediante `heroku open`, o tecleando la URL de la misma. Podrás navegar a través de ella como lo haces en en entorno local.
