@@ -57,7 +57,7 @@ Alojaremos nuestro cliente de React en una aplicación de Heroku. Elige un buen 
    heroku apps:info
    ````
  
-Una vez que hayas procedido, podrás acceder a esa URL. Recuerda que el número máximo de aplicaciones que podrás crear en una cuenta de Heroku sin indicar los datos de tu tarjeta de crédito es de 5 aplicaciones.
+Una vez hayas procedido, podrás acceder a esa URL. Recuerda que el número máximo de aplicaciones que podrás crear en una cuenta de Heroku sin indicar los datos de tu tarjeta de crédito es de 5 aplicaciones.
 
 ## Creación de aplicación servidor en Heroku
 
