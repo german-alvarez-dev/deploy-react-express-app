@@ -7,27 +7,15 @@ Transferir tu aplicación de React a producción supone compilarla para desplega
 
 ## Variable de entorno remoto
 
-Debido a que las peticiones que se realizan desde tus servicios deben ir dirigidas hacia `http://localhost:5000/api` cuando se encuentre en el entorno local, y hacia  `https://planet-donuts-api.herokuapp.com/api` en un entorno remoto, es necesario crear las variables de entorno en ambos contextos.
+En este punto, todos tus servicios de Axios apuntan al BaseUrl `process.env.REACT_APP_API_URL`. Si bien esta variable de entorno se encuentra declarada en el script de start, esta solo está vigente en local por lo que es necesario darla de alta en remoto para que apunte a la API remota, situada en `https://donuts-planet-api.herokuapp.con`. 
+
+Esto permitirá que las peticiones que se realizan desde tus servicios en local sigan apuntando a `http://localhost:5000/api` mientras que en remoto apuntarán a `https://planet-donuts-api.herokuapp.com/api`.
  
 1. Accede mediante la terminal al directorio raíz de tu cliente y asegúrate de que está enlazado al Git de cliente mediante `heroku apps:info`. Declara entonces una variable de entorno remoto en tu aplicación de Heroku:
 
        heroku config:set REACT_APP_API_URL="https://planet-donuts-api.herokuapp.com/api" --app planet-donuts
 
-   Es importante que su nombre comience con `REACT_APP_`, de lo contrario create-react-app no la reconocerá en el siguiente paso, y recuerda sustituir `planet-donuts` por el nombre de tu aplicación de cliente.
    
-2.  Modifica **todos** tus servicios de Axios que ahora apuntan a `http://localhost:5000/api` para que, una vez subido el cliente a la aplicación de Heroku, tomen como `baseURL` el valor de la variable de entorno remoto que acabas de crear. 
-
-        baseURL: process.env.REACT_APP_API_URL
-
-## Variable de entorno local
-
-Tu aplicación local ha dejado de funcionar. El paquete create-react-app no dispone de una dependencia como `dotenv` que propague las variables de entorno local, pero manipulando el script de inicio de su `package.json`podemos alcanzar el mismo objetivo:
-
-    "start": "REACT_APP_API_URL=http://localhost:5000/api react-scripts start",  
-
-De esta forma `process.env.REACT_APP_API_URL` tomará dos valores: el del script en un entorno local, y el de Heroku en el entorno remoto. Tendremos pues el cliente funcionando de manera paralela en ambos entornos.
-
-Reinicia tu cliente y comprueba cómo funciona con normalidad, dirigiendo las peticion es al servidor local.
 
 ## Paso a producción
 
