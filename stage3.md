@@ -48,7 +48,7 @@ Alojaremos nuestro cliente de React en una aplicación de Heroku. Elige un buen 
 2. Ahora enlaza el directorio `/client` en el que te encuentras al Git de la aplicación de Heroku:
 
    ````
-   git remote add nombre_remoto https://git.heroku.com/xxx.git
+   git remote add heroku_client_master https://git.heroku.com/xxx.git
    ````
 
 3. Puedes comprobar en cualquier momento la aplicación de Heroku asociada a un Git mediante el comando:
@@ -67,7 +67,7 @@ En este caso no es necesario Buildpack, y no olvides cambiar también el nombre 
 
     heroku create donuts-planet-api
     
-    git remote add nombre_remoto https://git.heroku.com/xxx.git
+    git remote add heroku_server_master https://git.heroku.com/xxx.git
     
     heroku info donuts-planet-api
     
