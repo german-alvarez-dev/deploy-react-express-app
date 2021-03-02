@@ -21,7 +21,7 @@ Debido a que el archivo `.env` no será desplegado, es necesario habilitar las v
 
 ## Paso a producción
 
-Transferir los archivos a la aplicación de Heroku hará accesible tu API desde los dominios aceptados por CORS, a la vez que mantendrá todas sus funcionalidades en el entorno local, donde puedes seguir desarrollando.
+Transferir los archivos a la aplicación de Heroku hará accesible tu API desde los dominios aceptados por CORS, a la vez que mantendrá todas sus funcionalidades en el entorno local donde puedes seguir desarrollando.
 
 1. Accede mediante la terminal a la raíz de tu servidor, donde se encuentra el archivo `package.json`
 2. Agrega los cambios y realiza un primer commit:
