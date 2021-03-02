@@ -2,7 +2,7 @@
 
 ## Objeto del documento
 
-Describir el proceso para deplegar a producción en [Heroku](https://www.heroku.com/) + [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) una SPA con cliente [`create-react-app`](https://create-react-app.dev/docs/getting-started/) y servidor [ExpressJS](https://expressjs.com/).
+Describir el proceso para deplegar a producción en [Heroku](https://www.heroku.com/) + [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) una MERN Stack application con cliente [`create-react-app`](https://create-react-app.dev/docs/getting-started/) y servidor [ExpressJS](https://expressjs.com/).
 
 ## Objetivo del deploy
 
