@@ -18,7 +18,7 @@ Describir el proceso para deplegar a producción en [Heroku](https://www.heroku.
 **Deploy cliente/servidor**: crear en Heroku las aplicaciones de cliente y servidor remotas donde desplegar las locales:
 
 1. Desplegar aplicación de servidor en Heroku (stage 4)
-2. Desplegar aplicación de servidor en Heroku (stage 5)
+2. Desplegar aplicación de cliente en Heroku (stage 5)
 
 ## Fases de paso a producción
 
