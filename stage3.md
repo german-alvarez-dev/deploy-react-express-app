@@ -54,7 +54,7 @@ Alojaremos nuestro cliente de React en una aplicación de Heroku. Elige un buen 
 3. Puedes comprobar en cualquier momento la aplicación de Heroku asociada a un Git mediante el comando:
 
    ````
-   heroku info donuts-planet
+   heroku info --app donuts-planet
    ````
  
 Una vez hayas procedido, podrás acceder a esa URL. Recuerda que el número máximo de aplicaciones que podrás crear en una cuenta de Heroku sin indicar los datos de tu tarjeta de crédito es de 5 aplicaciones.
