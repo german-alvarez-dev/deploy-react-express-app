@@ -33,8 +33,8 @@ Transferir los archivos a la aplicación de Heroku hará accesible tu API desde 
        
        git subtree push --prefix=server heroku_server_master master
 
-4. Una vez finalizado, comprueba la ausencia de errores en los logs mediante el comando `heroku logs --tail`
-5. Abre tu aplicación en el navegador mediante `heroku open`, o tecleando la URL de la misma. Podrás comprobar si los endpoints de tu API mantienen su funcionalidad, ahora en remoto.
+4. Una vez finalizado, comprueba la ausencia de errores en los logs mediante el comando `heroku logs --tail --app planet-donuts-api`
+5. Abre tu aplicación en el navegador mediante `heroku open --app planet-donuts-api`, o tecleando la URL de la misma. Podrás comprobar si los endpoints de tu API mantienen su funcionalidad, ahora en remoto.
 
 ## Interfaz de usuario de Heroku
 
