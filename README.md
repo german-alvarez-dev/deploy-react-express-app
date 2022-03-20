@@ -1,4 +1,6 @@
-# Deploy a Heroku
+# Deploy a Heroku (DEPRECATED)
+
+La versión actualizada del deploy se encuentra [en este enlace](https://github.com/german-alvarez-dev/express-deploy-docs)
 
 ## Objeto del documento
 
